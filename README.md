@@ -5,25 +5,25 @@
 
 
 [Gatsby](https://www.gatsbyjs.org/docs/)
->> React-based, GraphQL powered, static site generator
->> [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
->> - static files for incredibly fast page loads
->> - service workers
->> - code splitting
->> - server-side rendering
->> - intelligent image loading
->> - asset optimization
->> - and data prefetching. All out of the box. I didn’t believe the speed until I tried it myself.
+> React-based, GraphQL powered, static site generator
+> [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+> - static files for incredibly fast page loads
+> - service workers
+> - code splitting
+> - server-side rendering
+> - intelligent image loading
+> - asset optimization
+> - and data prefetching. All out of the box. I didn’t believe the speed until I tried it myself.
 
 [Netlify CMS](https://www.netlifycms.org)
 [Netlify](https://www.netlify.com) 
->>for continuous deployment, and CDN distribution.
+>for continuous deployment, and CDN distribution.
 
 [JAMstack architecture](https://jamstack.org)
->> using Git as a single source of truth
+> using Git as a single source of truth
 
 [bulma](https://bulma.io/)
->> open source CSS framework based on Flexbox; also uses SASS
+> open source CSS framework based on Flexbox; also uses SASS
 
 Node.js
 
