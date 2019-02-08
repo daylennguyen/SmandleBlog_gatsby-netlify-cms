@@ -15,21 +15,23 @@
 > - asset optimization
 > - and data prefetching. All out of the box. I didn’t believe the speed until I tried it myself.
 
-[Netlify CMS](https://www.netlifycms.org)
+#### [Netlify CMS](https://www.netlifycms.org)
 >	An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS.
 
-[Netlify](https://www.netlify.com) 
->for continuous deployment, and CDN distribution.
+##### [Netlify](https://www.netlify.com) 
+>	for continuous deployment, and CDN distribution.
 
-[JAMstack architecture](https://jamstack.org)
-> using Git as a single source of truth
+#### [JAMstack architecture](https://jamstack.org)
+> 	Using Git as a single source of truth
 
-[bulma](https://bulma.io/)
-> open source CSS framework based on Flexbox; also uses SASS  
+#### [bulma](https://bulma.io/)
+> 	Open source CSS framework based on Flexbox; also uses SASS  
 
 ------
 ## Sass
-sass file found within the `src/components/all.sass` to which is referenced from [`src/components/Layout.js`](src/components/Layout.js)
+Sass file
+	Location: [`src/components/all.sass`](src/components/all.sass) 
+	referenced from: [`src/components/Layout.js`](src/components/Layout.js)
 
 
 Node.js
