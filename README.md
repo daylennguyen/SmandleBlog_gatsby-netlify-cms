@@ -29,7 +29,7 @@
 
 ------
 ## Sass
-sass file found within the `src/components/all.sass` to which is referenced from `src/components/Layout.js` 
+sass file found within the `src/components/all.sass` to which is referenced from [`src/components/Layout.js`](src/components/Layout.js)
 
 
 Node.js
