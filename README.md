@@ -25,9 +25,9 @@
 > using Git as a single source of truth
 
 [bulma](https://bulma.io/)
-> open source CSS framework based on Flexbox; also uses SASS
+> open source CSS framework based on Flexbox; also uses SASS  
 
-
+------
 ## Sass
 sass file found within the `src/components/all.sass` to which is referenced from `src/components/Layout.js` 
 
