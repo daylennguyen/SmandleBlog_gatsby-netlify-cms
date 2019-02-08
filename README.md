@@ -4,28 +4,27 @@
 ------
 
 ## Dependencies 
-[Gatsby](https://www.gatsbyjs.org/docs/)
-> React-based, GraphQL powered, static site generator
-> [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
-> - static files for incredibly fast page loads
-> - service workers
-> - code splitting
-> - server-side rendering
-> - intelligent image loading
-> - asset optimization
-> - and data prefetching. All out of the box. I didn’t believe the speed until I tried it myself.
+##### [Gatsby](https://www.gatsbyjs.org/docs/)
+React-based, GraphQL powered, static site generator
+###### [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+All out of the box. I didn’t believe the speed until I tried it myself.
+```
+static files for incredibly fast page loads, service workers, code splitting, 
+server-side rendering, intelligent image loading, asset optimization, and data pre-fetching.
+```
 
-#### [Netlify CMS](https://www.netlifycms.org)
->	An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS.
 
-##### [Netlify](https://www.netlify.com) 
+##### [Netlify CMS](https://www.netlifycms.org)
+>	An all-in-one work flow that combines global deployment, continuous integration, and automatic HTTPS.
+
+###### [Netlify](https://www.netlify.com) 
 >	for continuous deployment, and CDN distribution.
 
-#### [JAMstack architecture](https://jamstack.org)
+##### [JAMstack architecture](https://jamstack.org)
 > 	Using Git as a single source of truth
 
-#### [bulma](https://bulma.io/)
-> 	Open source CSS framework based on Flexbox; also uses SASS  
+##### [bulma](https://bulma.io/)
+> 	Open source CSS framework based on Flex box; also uses SASS  
 
 ------
 ## Sass
