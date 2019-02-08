@@ -14,10 +14,10 @@ server-side rendering, intelligent image loading, asset optimization, and data p
   
 ### [Netlify CMS](https://www.netlifycms.org) and [Netlify 🏯](https://www.netlify.com)    
 `CMS = Content Management System`  
-
 For continuous deployment, and CDN distribution.
 An all-in-one work flow that combines global deployment, 
 continuous integration, and automatic HTTPS.
+
 ------
 # File Structure 📂
 ### Sass file, for Style 😎
