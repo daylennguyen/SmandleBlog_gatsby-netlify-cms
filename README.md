@@ -13,21 +13,22 @@ server-side rendering, intelligent image loading, asset optimization, and data p
 
 All out of the box. I didn’t believe the speed until I tried it myself.
 ```
-#### [Netlify CMS](https://www.netlifycms.org)	
+#### [Netlify CMS](https://www.netlifycms.org) and [Netlify](https://www.netlify.com)	
 ```
+CMS = Content Management System
+For continuous deployment, and CDN distribution.
 An all-in-one work flow that combines global deployment, 
 continuous integration, and automatic HTTPS.
 ```
-###### [Netlify](https://www.netlify.com) 
-`For continuous deployment, and CDN distribution.`
 ##### [JAMstack architecture](https://jamstack.org)
-`Using Git as a single source of truth`
+`Using Git as a single source of truth. Meaning that, the git repository is used for deployment`
+
 ##### [bulma](https://bulma.io/)
 `Open source CSS framework based on Flex box; also uses SASS`
 
 ------
 ## File Structure
-##### Sass file
+##### Sass file, for Style 😎
 	Location: [`src/components/all.sass`](src/components/all.sass) 
 	referenced from: [`src/components/Layout.js`](src/components/Layout.js)
 
