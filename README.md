@@ -1,9 +1,9 @@
 **[Based Upon Gatsby + Netlify CMS Starter](https://gatsby-netlify-cms.netlify.com/)**.
+  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
->	An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS.
+------
 
-
-
+## Dependencies 
 [Gatsby](https://www.gatsbyjs.org/docs/)
 > React-based, GraphQL powered, static site generator
 > [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
@@ -16,6 +16,8 @@
 > - and data prefetching. All out of the box. I didn’t believe the speed until I tried it myself.
 
 [Netlify CMS](https://www.netlifycms.org)
+>	An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS.
+
 [Netlify](https://www.netlify.com) 
 >for continuous deployment, and CDN distribution.
 
@@ -25,7 +27,14 @@
 [bulma](https://bulma.io/)
 > open source CSS framework based on Flexbox; also uses SASS
 
+
+## Sass
+sass file found within the `src/components/all.sass` to which is referenced from `src/components/Layout.js` 
+
+
 Node.js
+
+
 
 ### Access Locally
 ```
