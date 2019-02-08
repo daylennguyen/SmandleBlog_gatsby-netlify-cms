@@ -4,39 +4,36 @@
 ------
 
 ## Dependencies 
-##### [Gatsby](https://www.gatsbyjs.org/docs/)
-React-based, GraphQL powered, static site generator
+#### [Gatsby](https://www.gatsbyjs.org/docs/)
+`React-based, GraphQL powered, static site generator`
 ###### [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
-All out of the box. I didn’t believe the speed until I tried it myself.
 ```
 static files for incredibly fast page loads, service workers, code splitting, 
 server-side rendering, intelligent image loading, asset optimization, and data pre-fetching.
+
+All out of the box. I didn’t believe the speed until I tried it myself.
 ```
-
-
-##### [Netlify CMS](https://www.netlifycms.org)
->	An all-in-one work flow that combines global deployment, continuous integration, and automatic HTTPS.
-
+#### [Netlify CMS](https://www.netlifycms.org)	
+```
+An all-in-one work flow that combines global deployment, 
+continuous integration, and automatic HTTPS.
+```
 ###### [Netlify](https://www.netlify.com) 
->	for continuous deployment, and CDN distribution.
-
+`For continuous deployment, and CDN distribution.`
 ##### [JAMstack architecture](https://jamstack.org)
-> 	Using Git as a single source of truth
-
+`Using Git as a single source of truth`
 ##### [bulma](https://bulma.io/)
-> 	Open source CSS framework based on Flex box; also uses SASS  
+`Open source CSS framework based on Flex box; also uses SASS`
 
 ------
-## Sass
-Sass file
+## File Structure
+##### Sass file
 	Location: [`src/components/all.sass`](src/components/all.sass) 
 	referenced from: [`src/components/Layout.js`](src/components/Layout.js)
 
 
-Node.js
-
-
-
+------
+# Out of box Read Me	
 ### Access Locally
 ```
 $ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
