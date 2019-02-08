@@ -12,6 +12,7 @@ server-side rendering, intelligent image loading, asset optimization, and data p
 
 All out of the box. I didn’t believe the speed until I tried it myself.
 ```
+
 #### [Netlify CMS](https://www.netlifycms.org) and [Netlify](https://www.netlify.com)	
 ```
 CMS = Content Management System
