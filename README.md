@@ -1,11 +1,10 @@
-# **[Based Upon Gatsby + Netlify CMS Starter](https://gatsby-netlify-cms.netlify.com/)**.
-  
+# **[Based Upon Gatsby + Netlify CMS Starter](https://gatsby-netlify-cms.netlify.com/)**.  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
-------
+
 ## Dependencies 
-#### [Gatsby](https://www.gatsbyjs.org/docs/)
+### [Gatsby](https://www.gatsbyjs.org/docs/)
 `React-based, GraphQL powered, static site generator`
-###### [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+##### [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 ```
 static files for incredibly fast page loads, service workers, code splitting, 
 server-side rendering, intelligent image loading, asset optimization, and data pre-fetching.
@@ -13,18 +12,18 @@ server-side rendering, intelligent image loading, asset optimization, and data p
 All out of the box. I didn’t believe the speed until I tried it myself.
 ```
 
-#### [Netlify CMS](https://www.netlifycms.org) and [Netlify](https://www.netlify.com)	
+### [Netlify CMS](https://www.netlifycms.org) and [Netlify](https://www.netlify.com)	
 ```
 CMS = Content Management System
 For continuous deployment, and CDN distribution.
 An all-in-one work flow that combines global deployment, 
 continuous integration, and automatic HTTPS.
 ```
-##### [JAMstack architecture](https://jamstack.org)
+### [bulma](https://bulma.io/)
+`Open source CSS framework based on Flex box; also uses SASS`
+#### [JAMstack architecture](https://jamstack.org)
 `Using Git as a single source of truth. Meaning that, the git repository is used for deployment`
 
-##### [bulma](https://bulma.io/)
-`Open source CSS framework based on Flex box; also uses SASS`
 
 ------
 ## File Structure
