@@ -72,7 +72,7 @@ continuous integration, and automatic HTTPS.
         └────── tags.js
 
 ```
-
+# Dirs and Files, Short Descriptions
 ### Sass file, for Style 😎
 Location:           [`src/components/all.sass`](src/components/all.sass)  
 referenced from:    [`src/components/Layout.js`](src/components/Layout.js)
