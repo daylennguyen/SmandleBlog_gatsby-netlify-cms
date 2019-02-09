@@ -4,14 +4,17 @@
 
 # Dependencies 
 ### [Bulma 🖌](https://bulma.io/)
-`Open source CSS framework based on Flex box; also uses SASS`
+`Open source CSS framework based on Flex box. Bulma provides a baseline for styling and components; which allows for us to only need one Sass file`
 
 ### [Gatsby 🔥](https://www.gatsbyjs.org/docs/) 
 `React-based, GraphQL powered, static site generator. (THATS SOME FAST MUMBO JUMBO!)`  
 static files for incredibly fast page loads, service workers, code splitting, 
 server-side rendering, intelligent image loading, asset optimization, and data pre-fetching.
-###### [Also see: `Gatsby v2`](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).  
-  
+###### [Also see: `Gatsby v2`](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+ 
+#### [Material Design Icons😼](https://cdn.materialdesignicons.com/3.4.93/)
+`Open Source Icon Pack, imported through yarn`
+
 ### [Netlify CMS](https://www.netlifycms.org) and [Netlify 🏯](https://www.netlify.com)    
 `CMS = Content Management System`  
 For continuous deployment, and CDN distribution.
