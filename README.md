@@ -23,7 +23,7 @@ An all-in-one work flow that combines global deployment,
 continuous integration, and automatic HTTPS.
 
 ------
-# File Structure 📁
+# 📁 File Structure 
 ```
   [/src]
     📁
