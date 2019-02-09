@@ -23,17 +23,17 @@ An all-in-one work flow that combines global deployment,
 continuous integration, and automatic HTTPS.
 
 ------
-# File Structure 📂
+# File Structure 📁
 ```
   [/src]
-    📂
-    ├───📂 [cms]
+    📁
+    ├───📁 [cms]
     │   ├────── cms.js
-    │   └───📂 [preview-templates]
+    │   └───📁 [preview-templates]
     │       ├────── AboutPagePreview.js
     │       ├────── BlogPostPreview.js
     │       └────── ProductPagePreview.js
-    ├───📂 [components]
+    ├───📁 [components]
     │   ├────── all.sass
     │   ├────── Content.js
     │   ├────── Features.js
@@ -42,30 +42,30 @@ continuous integration, and automatic HTTPS.
     │   ├────── PreviewCompatibleImage.js
     │   ├────── Pricing.js
     │   └────── Testimonials.js
-    ├───📂 [img]
+    ├───📁 [img]
     │   ├────── github-icon.svg
     │   ├────── iot.png
     │   └────── logo.svg
-    ├───📂 [pages]
+    ├───📁 [pages]
     │   ├────── 404.js
-    │   ├──────📂 [about]
+    │   ├──────📁 [about]
     │   │      └────── index.md
-    │   ├──────📂 [blog]
+    │   ├──────📁 [blog]
     │   │      ├────── 2016-12-17-making-sense-of-the-scaas-new-flavor-wheel.md
     │   │      ├────── 2017-01-04-a-beginners-guide-to-brewing-with-chemex.md
     │   │      ├────── 2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week.md
     │   │      └────── 2019-02-05-test-title.md
-    │   ├──────📂 [contact]
+    │   ├──────📁 [contact]
     │   │      ├────── examples.js
     │   │      ├────── file-upload.js
     │   │      ├────── index.js
     │   │      └────── thanks.js
     │   ├────── index.js
-    │   ├──────📂[products]
+    │   ├──────📁[products]
     │   │      └────── index.md
-    │   └──────📂[tags]
+    │   └──────📁[tags]
     │          └────── index.js
-    └───📂 [templates]
+    └───📁 [templates]
         ├────── about-page.js
         ├────── blog-post.js
         ├────── product-page.js
