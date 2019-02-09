@@ -13,7 +13,7 @@ static files for incredibly fast page loads, service workers, code splitting,
 server-side rendering, intelligent image loading, asset optimization, and data pre-fetching.
 ###### [Also see: `Gatsby v2`](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).  
   
-### [Material Design Icons😼](https://cdn.materialdesignicons.com/3.4.93/)
+### [Material Design Icons😼](https://cdn.materialdesignicons.com/3.4.93/) -> [docs] (https://dev.materialdesignicons.com/getting-started)
 `Open Source Icon Pack, imported through yarn`  
   
 ### [Netlify CMS](https://www.netlifycms.org) and [Netlify 🏯](https://www.netlify.com)    
