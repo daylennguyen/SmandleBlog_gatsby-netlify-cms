@@ -24,9 +24,56 @@ continuous integration, and automatic HTTPS.
 
 ------
 # File Structure 📂
+```
+.
+├── cms
+│   ├── cms.js
+│   └── preview-templates
+│       ├── AboutPagePreview.js
+│       ├── BlogPostPreview.js
+│       └── ProductPagePreview.js
+├── components
+│   ├── all.sass
+│   ├── Content.js
+│   ├── Features.js
+│   ├── Layout.js
+│   ├── Navbar.js
+│   ├── PreviewCompatibleImage.js
+│   ├── Pricing.js
+│   └── Testimonials.js
+├── img
+│   ├── github-icon.svg
+│   ├── iot.png
+│   └── logo.svg
+├── pages
+│   ├── 404.js
+│   ├── about
+│   │   └── index.md
+│   ├── blog
+│   │   ├── 2016-12-17-making-sense-of-the-scaas-new-flavor-wheel.md
+│   │   ├── 2017-01-04-a-beginners-guide-to-brewing-with-chemex.md
+│   │   ├── 2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week.md
+│   │   └── 2019-02-05-test-title.md
+│   ├── contact
+│   │   ├── examples.js
+│   │   ├── file-upload.js
+│   │   ├── index.js
+│   │   └── thanks.js
+│   ├── index.js
+│   ├── products
+│   │   └── index.md
+│   └── tags
+│       └── index.js
+└── templates
+    ├── about-page.js
+    ├── blog-post.js
+    ├── product-page.js
+    └── tags.js
+
+```
+
 ### Sass file, for Style 😎
 Location:           [`src/components/all.sass`](src/components/all.sass)  
-
 referenced from:    [`src/components/Layout.js`](src/components/Layout.js)
 
 
