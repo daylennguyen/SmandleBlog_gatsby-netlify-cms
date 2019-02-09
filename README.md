@@ -24,7 +24,7 @@ continuous integration, and automatic HTTPS.
 
 ------
 # File Structure 📂
-```
+
 [src]
 📂
 ├───📂 [cms]
@@ -71,7 +71,6 @@ continuous integration, and automatic HTTPS.
     ├──────📄 product-page.js
     └──────📄 tags.js
 
-```
 
 ### Sass file, for Style 😎
 Location:           [`src/components/all.sass`](src/components/all.sass)  
