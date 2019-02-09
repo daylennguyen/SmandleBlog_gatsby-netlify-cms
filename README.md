@@ -25,8 +25,13 @@ continuous integration, and automatic HTTPS.
 ------
 # File Structure 📂
 ### Sass file, for Style 😎
-	Location: [`src/components/all.sass`](src/components/all.sass) 
-	referenced from: [`src/components/Layout.js`](src/components/Layout.js)
+Location:           [`src/components/all.sass`](src/components/all.sass) 
+referenced from:    [`src/components/Layout.js`](src/components/Layout.js)
+
+
+------
+# Color Palette
+
 
 
 ------
