@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
+import Icon from "@mdi/react";
+import { mdiCloudBraces } from "@mdi/js";
+
 import github from "../img/github-icon.svg";
 // import logo from "../img/iot.png";
 
@@ -12,7 +15,7 @@ const Navbar = class extends React.Component {
     );
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
-      // Add a click event on each of them 
+      // Add a click event on each of them
       $navbarBurgers.forEach(el => {
         el.addEventListener("click", () => {
           // Get the target from the "data-target" attribute
@@ -24,20 +27,20 @@ const Navbar = class extends React.Component {
         });
       });
     }
-// eslint-disable-next-line
-{/*<img src={logo} alt="IoT Innovations" style={{ width: "200px", height: 200px }} />*/}
+    // eslint-disable-next-line
+    {
+      /*<img src={logo} alt="IoT Innovations" style={{ width: "200px", height: 200px }} />*/
+    }
   }
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+      <nav className="navbar" role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">  
-              <span class="mdi mdi-access-point"></span> IoT Innovations LLC
+            <Link to="/" className="navbar-item" title="Logo">
+
+                <Icon className="navlogoico" path={mdiCloudBraces} size={2} />
+                <h1 className="logotxt">IoT Innovations </h1>
             </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">

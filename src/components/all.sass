@@ -1,5 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
-
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 // Config vars
 // 🍮🐈 Pastel Color Palette
 // Primary Bg Color
@@ -10,6 +10,8 @@ $pastel-corn:     #FDF0BC
 $pastel-blue:     #DAF1F3
 $pastel-blueDark: #BFE7E8
 $pastel-green:    #E0F2D2
+$pastel-green2:    #97E3A6
+
 $pastel-violet:   #D6DFF1
 $paste-redDark:   #F5D1C9
 // All Text
@@ -19,16 +21,23 @@ $body-color: #1E2627
 // // // // // // // // //
 // Template Colors
 // // // // // // // // //
-
+$navbar-background-color: $yolk
 $pastel-green-invert: #fff
 // $primary: $body-color
 // $primary-invert: $pastel-green-invert
+svg.navlogoico
+  fill: $pastel-green2
+  margin: 1rem
+
+.logotxt
+  font-family: 'Bungee Shade', cursive
+  font-size: 30px
 
 .layout
   background-color: $yolk
 
-.navbar .navbar-menu
-  box-shadow:none !important
+.navbar .container
+  // box-shadow:none !important
 
 .content .taglist
   list-style: none
