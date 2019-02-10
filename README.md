@@ -6,6 +6,10 @@
 ### [Bulma 🖌](https://bulma.io/)
 `Open source CSS framework based on Flex box. Bulma provides a baseline for styling and components; which allows for us to only need one Sass file`
 
+### flatpak photo3idea_studio
+>> <div>Icons made by <a href="https://www.flaticon.com/packs/multimedia-57" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+>>
+
   
 ### [Gatsby 🔥](https://www.gatsbyjs.org/docs/) 
 `React-based, GraphQL powered, static site generator. (THATS SOME FAST MUMBO JUMBO!)`  
