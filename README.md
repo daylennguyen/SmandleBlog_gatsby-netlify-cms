@@ -15,10 +15,9 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Bulma, CSS framework 🖌](https://bulma.io/)                  | Open source and based on Flex box; Bulma provides a baseline for styling and components; which allows for us to only need one Sass file |
 | [Flatpak, Vector Graphics  👷](https://www.flaticon.com/packs/multimedia-57) | Icons made by [photo3idea_studio](https://www.flaticon.com/packs/multimedia-57) from [flaticon](https://www.flaticon.com/) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/) |
-| [GatsbyJS  🔥](https://www.gatsbyjs.org/docs/)                | `React-based, GraphQL powered, static site generator. (THATS SOME FAST MUMBO JUMBO!)`   static files for incredibly fast page loads, service workers, code splitting,  server-side rendering, intelligent image loading, asset optimization, and data pre-fetching. <br />[Also see: `Gatsby v2`](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/). |
+| [GatsbyJS  🔥](https://www.gatsbyjs.org/docs/)                | `React-based, GraphQL powered, static site generator. (THATS SOME FAST MUMBO JUMBO!)`</br>static files for incredibly fast page loads, service workers, code splitting,  </br>server-side rendering, intelligent image loading, asset optimization, and data pre-fetching. <br />[Also see: `Gatsby v2`](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/). |
 | [Material Design Icons 😼](https://dev.materialdesignicons.com/getting-started) | Also see: [Cheatsheet](https://cdn.materialdesignicons.com/3.4.93/) |
-| [Netlify CMS](https://www.netlifycms.org) and [Netlify :crown:](https://www.netlify.com) | For continuous deployment, and CDN distribution.<br/>An all-in-one work flow that combines global deployment, 
-|                 -                                 |continuous integration, and automatic HTTPS.<br />Note: `CMS = Content Management System` |
+| [Netlify CMS](https://www.netlifycms.org) and [Netlify :crown:](https://www.netlify.com) | For continuous deployment, and CDN distribution.<br/>An all-in-one work flow that combines global deployment, |
 
 ## 📁 File Structure 
 ```
