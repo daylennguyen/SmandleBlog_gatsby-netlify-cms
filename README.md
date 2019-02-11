@@ -8,7 +8,6 @@
 
 `This repo contains the files, of whom are ref'd by Netlify to deploy the IoT Innovations LLC site.`
 
-[TOC]
 
 ## Dependencies 
 
@@ -19,10 +18,10 @@
 | [GatsbyJS  🔥](https://www.gatsbyjs.org/docs/)                | `React-based, GraphQL powered, static site generator. (THATS SOME FAST MUMBO JUMBO!)`   static files for incredibly fast page loads, service workers, code splitting,  server-side rendering, intelligent image loading, asset optimization, and data pre-fetching. <br />[Also see: `Gatsby v2`](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/). |
 | [Material Design Icons 😼](https://dev.materialdesignicons.com/getting-started) | Also see: [Cheatsheet](https://cdn.materialdesignicons.com/3.4.93/) |
 | [Netlify CMS](https://www.netlifycms.org) and [Netlify :crown:](https://www.netlify.com) | For continuous deployment, and CDN distribution.<br/>An all-in-one work flow that combines global deployment, 
-continuous integration, and automatic HTTPS.<br />Note: `CMS = Content Management System` |
+|                 -                                 |continuous integration, and automatic HTTPS.<br />Note: `CMS = Content Management System` |
 
 ## 📁 File Structure 
-```f
+```
   [/src]
     📁
     ├───📁 [cms]
