@@ -1,11 +1,7 @@
 # IoT Innovations Official Website
-
  [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
-
+[Based Upon Gatsby + Netlify CMS Starter](https://gatsby-netlify-cms.netlify.com/) 
 ### About
-
-#### [Based Upon Gatsby + Netlify CMS Starter](https://gatsby-netlify-cms.netlify.com/) 
-
 `This repo contains the files, of whom are ref'd by Netlify to deploy the IoT Innovations LLC site.`
 
 
