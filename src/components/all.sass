@@ -35,22 +35,23 @@ $body-color:      #1E2627
 // $primary-invert: $pastel-green-invert
 $navbar-background-color: $yolk
 $pastel-green-invert: #fff
-$lgo-trans-duration: 1s
+$lgo-trans-duration: .2s
 $logo-font: 'Bungee Shade', cursive
+
+
+
 
 svg.navlogoico
   fill: $body-color
-  // stroke: $body-color
-  // stroke-opacity:.3
   margin-right: 1rem
   transform: scale(1)
   transition: fill $lgo-trans-duration, transform $lgo-trans-duration, filter $lgo-trans-duration
   filter: drop-shadow(0px 0px 0px rgba(0,0,0,0))
 
+// disp. cloud ico next to logotxt
 .logo
   display: flex
   flex-direction: row
-
 .logotxt
   filter: drop-shadow(0px 0px 0px rgba(0,0,0,0))
   color: $yolk
@@ -66,8 +67,11 @@ svg.navlogoico
     filter: drop-shadow(-1.5px 1.5px 4px rgba(255,255,255,.8))
     fill: $pastel-green2
     color: $pastel-green2
-    transform: scale(1.0125) 
+    transform: scale(1.5) 
     text-shadow: none
+  &:hover svg.navlogoico    
+    transform: scale(0) 
+
     
 
 

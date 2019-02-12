@@ -10,6 +10,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
+      adsadsads
         <section className="section">
           <div className="container">
             <div className="content">

@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Icon from "@mdi/react";
 import { mdiCloudBraces } from "@mdi/js";
 
-import github from "../img/github-icon.svg";
+// import github from "../img/github-icon.svg";
 // import logo from "../img/iot.png";
 
 const Navbar = class extends React.Component {
@@ -38,8 +38,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-                <Icon className="navlogoico" path={mdiCloudBraces} size={2} />
-                <h1 className="logotxt">IoT Innovations </h1>
+                <Icon className="navlogoico" path={mdiCloudBraces} size={2.3} />
+                <h1 className="logotxt">IoT Innovations</h1>
             </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
@@ -71,7 +71,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <img src={github} alt="Github" />
+                  {/*<img src={github} alt="Github" />*/}
                 </span>
               </a>
             </div>
