@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Icon from "@mdi/react";
 import { mdiCloudBraces } from "@mdi/js";
 
-// import github from "../img/github-icon.svg";
+import github from "../img/github-icon.svg";
 // import logo from "../img/iot.png";
 
 const Navbar = class extends React.Component {
@@ -26,10 +26,6 @@ const Navbar = class extends React.Component {
           $target.classList.toggle("is-active");
         });
       });
-    }
-    // eslint-disable-next-line
-    {
-      /*<img src={logo} alt="IoT Innovations" style={{ width: "200px", height: 200px }} />*/
     }
   }
   render() {
@@ -60,8 +56,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
-              {/*TODO: Add Blog Reference Here*/}
-              <Link className="navbar-item" to="/">
+              <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
               <a
@@ -71,7 +66,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  {/*<img src={github} alt="Github" />*/}
+                  <img src={github} alt="Github" />
                 </span>
               </a>
             </div>
