@@ -1,67 +1,92 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade')
-@font-face 
+@font-face
   font-family: 'Jellee-Roman'
   src: url('/fonts/Jellee-Roman.otf') format('opentype'), url('/fonts/Jellee-Roman.ttf') format('truetype')
   font-weight: 100
   letter-spacing: 0.1em
-  
+
 // $family-primary: 'Jellee-Roman'
 
 
 // Config vars
 // 🍮🐈 Pastel Color Palette
-// Primary Bg Color
+
 // Accents
-$yolk:            #FCF5E0
-$pastel-red:      #FAE4D2
-$pastel-corn:     #FDF0BC
-$pastel-blue:     #DAF1F3
-$pastel-blueDark: #BFE7E8
-$pastel-green:    #E0F2D2
-$pastel-green2:   #97E3A6
-$pastel-violet:   #D6DFF1
-$pastel-redDark:  #F5D1C9
-$body-color:      #1E2627
+
+$yolk:            	#FCF5E0
+$pastel-red:      	#FAE4D2
+$pastel-corn:     	#FDF0BC
+$pastel-blue:     	#DAF1F3
+$pastel-blueDark: 	#BFE7E8
+$pastel-green:    	#E0F2D2
+$pastel-green2:   	#87eb9b
+$pastel-violet:   	#D6DFF1
+$pastel-violetDark:	#B3C6ED
+$pastel-redDark:  	#F5D1C9
+$body-color:      	#1E2627
+
+$bg-color: $yolk
 
 
-// All Text
-
-
-// // // // // // // // //
-// Template Colors
-// // // // // // // // //
-// $primary: $body-color
-// $primary-invert: $pastel-green-invert
-$navbar-background-color: $yolk
-$pastel-green-invert: #fff
 $lgo-trans-duration: .2s
 $logo-font: 'Bungee Shade', cursive
 
+// // // // // // // // //
+// Bulma Override
+// // // // // // // // //
+$primary: $pastel-violetDark
+$pastel-green-invert: #fff
+$info: hsl(171, 100%, 41%)
 
-body 
-  background-color: $yolk
+// Navigation-bar
+$navbar-item-hover-color: $body-color
+$navbar-item-hover-background-color:  $pastel-blue
+$navbar-background-color: $bg-color
+// $primary-invert: $pastel-green-invert
+
+
+
+body
+  background-color:  $bg-color
   min-height: 100vh
 
+.navbar-item
+	transition: background-color $lgo-trans-duration, color $lgo-trans-duration
+	align-items: center
+	justify-content: center
+
+.navbar-end
+	margin: 1rem
+	& .navbar-item
+		display: flex
+		flex-direction: column
+	  align-items: center
+	  justify-content: center
+
+svg.has-text-primary
+	fill: $primary
+
 svg.navlogoico
-  fill: $body-color
+  fill: $primary
   margin-right: 1rem
   transform: scale(1)
   transition: fill $lgo-trans-duration, transform $lgo-trans-duration, filter $lgo-trans-duration
   filter: drop-shadow(0px 0px 0px rgba(0,0,0,0))
 
-// disp. cloud ico next to logotxt
 .logo
   display: flex
   flex-direction: row
+
+//
 .logotxt
   filter: drop-shadow(0px 0px 0px rgba(0,0,0,0))
-  color: $yolk
+  color:  $bg-color
   transition: text-shadow $lgo-trans-duration,color $lgo-trans-duration, transform $lgo-trans-duration, filter $lgo-trans-duration
   font-family: $logo-font
   font-weight: bold
   font-size: 30px
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black 
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 
 // When either the cloud icon or logo txt are hovered, activate transition on both
 .navbar-brand
@@ -69,16 +94,16 @@ svg.navlogoico
     filter: drop-shadow(-1.5px 1.5px 4px rgba(255,255,255,.8))
     fill: $pastel-green2
     color: $pastel-green2
-    transform: scale(1.5) 
+    transform: scale(1.5)
     text-shadow: none
-  &:hover svg.navlogoico    
-    transform: scale(0) 
+  &:hover svg.navlogoico
+    transform: scale(0)
 
-    
+
 
 
 .layout
-  background-color: $yolk
+  background-color: $bg-color
 
 .navbar .container
   box-shadow:none !important

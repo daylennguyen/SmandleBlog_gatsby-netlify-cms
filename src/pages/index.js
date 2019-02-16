@@ -1,12 +1,18 @@
+/**
+		src/pages/index.js
+		Blog page component definition
+*/
+
 import React from 'react'
 import PropTypes from 'prop-types'
+// eslint-disable-next-line
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    // const { data } = this.props
+    // const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>

@@ -1,7 +1,14 @@
+/**
+		src/pages/index.js
+		Navigation Bar {React} component definition
+
+
+*/
 import React from "react";
 import { Link } from "gatsby";
 import Icon from "@mdi/react";
-import { mdiCloudBraces } from "@mdi/js";
+import { mdiCloudBraces, mdiHome } from "@mdi/js";
+
 
 import github from "../img/github-icon.svg";
 // import logo from "../img/iot.png";
@@ -34,7 +41,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-                <Icon className="navlogoico" path={mdiCloudBraces} size={2.3} />
+                <Icon className="navlogoico" path={mdi-mixcloud} size={2.3} />
                 <h1 className="logotxt">IoT Innovations</h1>
             </Link>
             {/* Hamburger menu */}
@@ -47,16 +54,17 @@ const Navbar = class extends React.Component {
           <div id="navMenu" className="navbar-menu">
             <div className="navbar-start has-text-right">{/*Start*/}</div>
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/">
-                Home
+              <Link className="navbar-item is-size-7" to="/">
+                <Icon className="verticle has-text-primary	" path={mdiHome} size={1.5} />
+                <p>Home</p>
               </Link>
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item is-size-7" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item is-size-7" to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item is-size-7" to="/blog">
                 Blog
               </Link>
               <a
