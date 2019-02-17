@@ -1,55 +1,51 @@
 /**
-		src/pages/index.js
-		Blog page component definition
+    src/pages/index.js
+    Blog page component definition
 */
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 // eslint-disable-next-line
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import { Link, graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Img from "gatsby-image"
 
 export default class IndexPage extends React.Component {
   render() {
-    // const { data } = this.props
+    const { data } = this.props
     // const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>
-        1111
+        <div class="container is-fluid flex">
+          <div class="notification">
+            This container is <strong>fluid</strong>: it will have a 32px gap on
+            either side, on any viewport size.
+          <Img fluid={data.imageOne.childImageSharp.fluid} />
+
+          </div>
+        </div>
       </Layout>
-    )
+    );
   }
 }
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
+    imageOne: file(relativePath: { eq: "head_opt.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
   }
-`
+`;

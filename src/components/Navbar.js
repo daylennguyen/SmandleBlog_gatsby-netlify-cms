@@ -7,7 +7,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Icon from "@mdi/react";
-import { mdiCloudBraces, mdiHome } from "@mdi/js";
+import {mdiBulletinBoard, mdiContactMail, mdiTagFaces, mdiMixcloud, mdiHome } from "@mdi/js";
 
 
 import github from "../img/github-icon.svg";
@@ -41,7 +41,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-                <Icon className="navlogoico" path={mdi-mixcloud} size={2.3} />
+                <Icon className="navlogoico" path={mdiMixcloud} size={2.3} />
                 <h1 className="logotxt">IoT Innovations</h1>
             </Link>
             {/* Hamburger menu */}
@@ -54,20 +54,23 @@ const Navbar = class extends React.Component {
           <div id="navMenu" className="navbar-menu">
             <div className="navbar-start has-text-right">{/*Start*/}</div>
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item is-size-7" to="/">
-                <Icon className="verticle has-text-primary	" path={mdiHome} size={1.5} />
+              <Link className="navbar-item is-size-7 navbutt" to="/">
+                <Icon className="verticle has-text-primary navico" path={mdiHome} size={1.5} />
                 <p>Home</p>
               </Link>
-              <Link className="navbar-item is-size-7" to="/about">
-                About
+              <Link className="navbar-item is-size-7 navbutt" to="/about">
+                <Icon className="verticle has-text-primary navico" path={mdiTagFaces} size={1.5} />
+                <p>About</p>
               </Link>
-              <Link className="navbar-item is-size-7" to="/contact">
-                Contact
+              <Link className="navbar-item is-size-7 navbutt" to="/contact">
+                <Icon className="verticle has-text-primary navico" path={mdiContactMail} size={1.5} />
+                <p>Contact</p>
               </Link>
-              <Link className="navbar-item is-size-7" to="/blog">
-                Blog
+              <Link className="navbar-item is-size-7 navbutt" to="/blog">
+                <Icon className="verticle has-text-primary navico" path={mdiBulletinBoard} size={1.5} />
+                <p>Blog</p>
               </Link>
-              <a
+{/*              <a
                 className="navbar-item"
                 href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
                 target="_blank"
@@ -76,7 +79,7 @@ const Navbar = class extends React.Component {
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>

@@ -1,47 +1,51 @@
+// 🍮🐈 Pastel Color Palette
 @import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade')
+@import url("https://use.typekit.net/jiy7lxc.css");
+
 @font-face
   font-family: 'Jellee-Roman'
   src: url('/fonts/Jellee-Roman.otf') format('opentype'), url('/fonts/Jellee-Roman.ttf') format('truetype')
   font-weight: 100
   letter-spacing: 0.1em
 
-// $family-primary: 'Jellee-Roman'
-
-
-// Config vars
-// 🍮🐈 Pastel Color Palette
-
-// Accents
-
-$yolk:            	#FCF5E0
-$pastel-red:      	#FAE4D2
-$pastel-corn:     	#FDF0BC
-$pastel-blue:     	#DAF1F3
-$pastel-blueDark: 	#BFE7E8
-$pastel-green:    	#E0F2D2
-$pastel-green2:   	#87eb9b
-$pastel-violet:   	#D6DFF1
-$pastel-violetDark:	#B3C6ED
-$pastel-redDark:  	#F5D1C9
-$body-color:      	#1E2627
-
-$bg-color: $yolk
-
-
-$lgo-trans-duration: .2s
-$logo-font: 'Bungee Shade', cursive
+  
+$family-primary: 'brandon-grotesque'
+  
+// // // // // // // // //
+//         Variables
+// // // // // // // // //
+//        /*Accents*/
+$yolk:                 #FCF5E0
+$yolkDark:             #D9CEAD
+$yolkDarker:       #E8DDBC
+$pastel-red:           #FAE4D2
+$pastel-corn:     	   #FDF0BC
+$pastel-blue:     	   #DAF1F3
+$pastel-blueDark: 	   #BFE7E8
+$pastel-green:    	   #E0F2D2
+$pastel-greenDark:   	 #87eb9b
+$pastel-green-invert:  #fff
+$pastel-violet:        #D6DFF1
+$pastel-violetDark:    #B3C6ED
+$pastel-redDark:       #F5D1C9
+$dark-gray:            #1E2627
+//        /*Usage*/
+$body-color:           $dark-gray
+$bg-color:             $yolk
+$lgo-trans-dur:   .2s
+$navbtn-ani-dur:  $lgo-trans-dur+.5
+$logo-font:            'Bungee Shade', cursive
 
 // // // // // // // // //
-// Bulma Override
+//    /*Bulma Override*/
 // // // // // // // // //
-$primary: $pastel-violetDark
-$pastel-green-invert: #fff
+$primary: $pastel-greenDark
 $info: hsl(171, 100%, 41%)
 
-// Navigation-bar
+// Navigation Variables
 $navbar-item-hover-color: $body-color
-$navbar-item-hover-background-color:  $pastel-blue
+$navbar-item-hover-background-color:  $pastel-greenDark
 $navbar-background-color: $bg-color
 // $primary-invert: $pastel-green-invert
 
@@ -51,53 +55,63 @@ body
   background-color:  $bg-color
   min-height: 100vh
 
-.navbar-item
-	transition: background-color $lgo-trans-duration, color $lgo-trans-duration
-	align-items: center
-	justify-content: center
-
-.navbar-end
-	margin: 1rem
-	& .navbar-item
-		display: flex
-		flex-direction: column
-	  align-items: center
-	  justify-content: center
-
-svg.has-text-primary
-	fill: $primary
-
-svg.navlogoico
-  fill: $primary
-  margin-right: 1rem
-  transform: scale(1)
-  transition: fill $lgo-trans-duration, transform $lgo-trans-duration, filter $lgo-trans-duration
-  filter: drop-shadow(0px 0px 0px rgba(0,0,0,0))
-
+// Navigation-Bar Styling
 .logo
   display: flex
   flex-direction: row
-
-//
-.logotxt
-  filter: drop-shadow(0px 0px 0px rgba(0,0,0,0))
-  color:  $bg-color
-  transition: text-shadow $lgo-trans-duration,color $lgo-trans-duration, transform $lgo-trans-duration, filter $lgo-trans-duration
-  font-family: $logo-font
-  font-weight: bold
-  font-size: 30px
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
-
-// When either the cloud icon or logo txt are hovered, activate transition on both
+// activate transition on txt&ico
 .navbar-brand
-  &:hover svg.navlogoico, &:hover .logotxt
-    filter: drop-shadow(-1.5px 1.5px 4px rgba(255,255,255,.8))
-    fill: $pastel-green2
-    color: $pastel-green2
-    transform: scale(1.5)
-    text-shadow: none
+  svg.navlogoico
+    fill: $primary
+    margin-right: 1rem
+    transform: scale(1)
+    transition: transform $lgo-trans-dur
+  .logotxt
+    color:  $bg-color
+    font-family: $logo-font
+    font-size: 30px
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black  
+    font-weight: bold
+    transition: color $lgo-trans-dur, transform $lgo-trans-dur, text-shadow $lgo-trans-dur
   &:hover svg.navlogoico
+    fill: $pastel-greenDark
     transform: scale(0)
+  &:hover .logotxt
+    text-shadow: none
+    transform: scale(1.5)
+    color: $pastel-greenDark
+
+// .navbar-item
+//   // transition: color $navbtn-ani-dur, fill $navbtn-ani-dur
+//   align-items: center
+//   justify-content: center
+// mdi-contact-mail
+
+
+.navbar-end
+  padding: 1rem
+  .navbutt p
+    transition: color $navbtn-ani-dur
+  & .navbar-item
+    display:          flex
+    flex-direction:   column
+    align-items:      center
+    justify-content:  center
+  //(React) muiIcons  syntax: <Icon className="custom-class" />
+  .navbutt  
+    transition: box-shadow $lgo-trans-dur+.3, background-color $navbtn-ani-dur
+    box-shadow: none
+  .navbutt:hover
+    box-shadow: .5px 3px 5px #C7C7C7
+  .navbutt svg.navico  
+    fill: $primary
+    transition: fill $navbtn-ani-dur
+  .navbutt:hover svg.navico
+    fill: $white
+  .navbutt:hover p
+    color: $black
+
+
 
 
 
