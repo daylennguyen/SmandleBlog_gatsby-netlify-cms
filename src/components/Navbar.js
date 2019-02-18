@@ -10,7 +10,7 @@ import Icon from "@mdi/react";
 import {mdiBulletinBoard, mdiContactMail, mdiTagFaces, mdiMixcloud, mdiHome } from "@mdi/js";
 
 
-import github from "../img/github-icon.svg";
+// import github from "../img/github-icon.svg";
 // import logo from "../img/iot.png";
 
 const Navbar = class extends React.Component {

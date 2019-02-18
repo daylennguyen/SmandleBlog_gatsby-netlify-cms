@@ -18,11 +18,9 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <div class="container is-fluid flex">
-          <div class="notification">
-            This container is <strong>fluid</strong>: it will have a 32px gap on
-            either side, on any viewport size.
-          <Img fluid={data.imageOne.childImageSharp.fluid} />
-
+          <div class="notification head-container">
+          <Img fluid={data.imageOne.childImageSharp.sizes} class="headimg"/>
+          <h1>Making Technology</h1>
           </div>
         </div>
       </Layout>
@@ -40,10 +38,10 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    imageOne: file(relativePath: { eq: "head_opt.jpg" }) {
+    imageOne: file(relativePath: { eq: "head.jpg" }) { 
       childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
+        sizes(maxWidth: 2000) {
+          ...GatsbyImageSharpSizes_tracedSVG
         }
       }
     }
