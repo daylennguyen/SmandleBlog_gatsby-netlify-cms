@@ -30,24 +30,27 @@ $pastel-violet:        #D6DFF1
 $pastel-violetDark:    #B3C6ED
 $pastel-redDark:       #F5D1C9
 $dark-gray:            #1E2627
+
 //        /*Usage*/
 $body-color:           $dark-gray
 $bg-color:             $yolk
-$lgo-trans-dur:   .2s
-$navbtn-ani-dur:  $lgo-trans-dur+.5
+$lgo-trans-dur:        .2s
+$navbtn-ani-dur:       $lgo-trans-dur+.5
 $logo-font:            'Bungee Shade', cursive
+$hero-bg:              $pastel-violetDark
+
 
 // // // // // // // // //
 //    /*Bulma Override*/
 // // // // // // // // //
 $primary: $pastel-greenDark
 $info: hsl(171, 100%, 41%)
-
+$navbar-height: 4rem
 // Navigation Variables
 $navbar-item-hover-color: $body-color
 $navbar-item-hover-background-color:  $pastel-greenDark
 $navbar-background-color: $bg-color
-// $primary-invert: $pastel-green-invert
+$primary-invert: $pastel-green-invert
 
 
 
@@ -82,7 +85,7 @@ body
     color: $pastel-greenDark
 
 .navbar-end
-  padding: 1rem
+  // padding: 1rem
   .navbutt p
     transition: color $navbtn-ani-dur
   & .navbar-item
@@ -92,10 +95,17 @@ body
     justify-content:  center
   //(React) muiIcons  syntax: <Icon className="custom-class" />
   .navbutt  
-    transition: box-shadow $lgo-trans-dur+.3, background-color $navbtn-ani-dur
+    box-sizing: border-box
+    transition: box-shadow $lgo-trans-dur+.3, background-color $navbtn-ani-dur, transform $navbtn-ani-dur, border-top $navbtn-ani-dur
     box-shadow: none
+    border-bottom: 3px solid $bg-color
+
   .navbutt:hover
     box-shadow: .5px 3px 5px #C7C7C7
+    border-bottom: 3px solid $white
+    // transform: translatey(-3px)
+
+
   .navbutt svg.navico  
     fill: $primary
     transition: fill $navbtn-ani-dur
@@ -104,28 +114,54 @@ body
   .navbutt:hover p
     color: $black
 
-.head-container
-  filter:     grayscale(100%)
+.horizontal-direct
+  flex-direction: column
+  // align-items: left !important
+  // justify-content: left
+.alignleft .level-item
+  align-items: start
+  border: solid 1px #D3D3D3
+  // justify-content: left !important
+.headlinebg
+  background-color: $pastel-violet
+  padding: 3rem
+  display: flex
+  animation: float-shade 4s ease-in-out 0s infinite
+
+.flexcenter
+  align-items: center
+  align-content: center
+  // box-shadow: .5px 3px 5px #C7C7C7
+.headart
+  background-color: $pastel-violet
+  animation: float-shade 4s ease-in-out 0s infinite
+
+
+
   
-  &:after
-    content:  "Making Technology"
-    width:  100%
-    height: 100%
-    font-size: 4rem
-    color: $white
-    align-content: center
-    justify-content: center
-    text-align: center
-    position: absolute
-    margin: 0 auto
-    top:      0
-    left:     0
-    bottom:   0
-    right:    0
-    // background: rgba(179, 198, 237, 0.5)
-    // mix-blend-mode: difference
+@keyframes float-shade 
+	0%
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+		transform: translatey(0px)
+	50%
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2)
+		transform: translatey(-15px)
+	100%
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+		transform: translatey(0px)
+	
 
 
+.headertext
+  font-size: 50px
+  clear: right
+
+.subheadertext
+  font-size: 40px
+
+.hero
+  background-color: $hero-bg
+  margin: 0 1rem
 
 .layout
   background-color: $bg-color
