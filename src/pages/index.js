@@ -53,11 +53,9 @@ export default class IndexPage extends React.Component {
               <div class="level-item learn-container">
                 <a
                   onClick={() => {
-                    document
-                      .querySelector(".ServicesPage-serv-1")
-                      .scrollIntoView({
-                        behavior: "smooth",
-                      });
+                    document.querySelector(".services").scrollIntoView({
+                      behavior: "smooth",
+                    });
                   }}
                 >
                   <Icon
@@ -74,7 +72,7 @@ export default class IndexPage extends React.Component {
           </section>
         </section>
         <section>
-          <div class="level-item">
+          <div class="level-item services">
             {/* <h1 class="sec-title">Our Services</h1> */}
             <ServicesPage />
           </div>
